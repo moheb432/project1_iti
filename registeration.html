@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -15,7 +16,9 @@
     <link rel="stylesheet " href="asssets\css\assets.css">
   </head>
 
-  <body><div class="container-fluid d-flex justify-content-center mt-3">
+  <body>
+    
+    <div class="container-fluid d-flex justify-content-center mt-3">
   <nav class="navbar navbar-expand-md navbar-light bg-light rounded-pill shadow px-5 w-100" style="max-width: 1000px;">
     
     <!-- Logo -->
@@ -79,38 +82,41 @@
 
             <div class="col-lg-3"></div>
              <div class="col-lg-6">
-
-                <form class="form-group">
-                    <div class="row">
+              <form action="login.html" method="get" class="px-3 pt-3 form-group"></form>
+              <div class="row">
 
                      <div class="col-md-6 mb-3">
 
                         <label >First Name : </label>                        
-                         <input type="text" class="form-control rounded-pill"
+                         <input type="text" class="form-control rounded-pill" required
                           placeholder="Enter your First Name" >
                     </div>
 
                      <div class="col-md-6 mb-3">
 
                         <label class="">Last Name : </label>                        
-                         <input type="text" class="form-control rounded-pill"
+                         <input type="text" class="form-control rounded-pill" required
                           placeholder="Enter your Last Name" >
 
                     </div>
                     <div class="col-lg- mb-3">
 
                         <label for="email address"> email address</label>
-                        <input type="email" class="form-control rounded-pill" placeholder="examble@outlook.com" >
+                        <input type="email" class="form-control rounded-pill" placeholder="examble@outlook.com" required >
                     </div>
                        <div class="col-md-6 mb-3">
 
                         <label for="password"> password</label>
-                        <input type="password" class="form-control rounded-pill " placeholder="Enter password" >
+                        <input type="password" class="form-control rounded-pill " 
+                        placeholder="Enter password" required minlength="6" maxlength="20"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
                     </div>
                        <div class="col-md-6 mb-3">
 
                         <label for="re-password"> Re-type password</label>
-                        <input type="password" class="form-control rounded-pill " placeholder="re-type again" >
+                        <input type="password" class="form-control rounded-pill "
+                         placeholder="re-type again" required minlength="6" maxlength="20"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"> 
                     </div>
                     <div class="col-lg- mb-3">
 
@@ -123,7 +129,7 @@
                     
                     <div class="col-md-6 mb-3 p-4">
 
-                          <select class="rounded-pill" name="gen" >
+                          <select class="rounded-pill" name="gen" required >
                             <option value="">choose gender ...</option>
                             <option>Male</option>
                             <option>Female</option>
@@ -131,21 +137,20 @@
                         </div>
                     <div class="col-md-6 mb-3 rounded-pill">
                           <label for="BD">Enter your Birthdate</label>
-                          <input type="date" class="form-control rounded-pill" id="birthDate" max="2025-07-25">
+                          <input type="date" class="form-control rounded-pill" 
+                          id="birthDate" max="2025-07-25" required>
                         </div>    
 
                         
                     </div>
                     
                     <div class="col">
-                        <form action="login.html" method="get">
+
                         <button type="submit" class="btn btn-success px-4 mt-1 w-100 rounded-pill">Submit</button>
-                        </form>
-                    </div>        
+                     </div>        
                 </div>
-                </form>    
-                </div>
-            </div>
+                </form>
+                       
             <div class="col-lg-3"></div>
         </div>        
     </div>
@@ -163,6 +168,3 @@
   </div>
 </div>
     
-
-  </body>
-</html>
