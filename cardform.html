@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <style>
+        body{
+            background-position: center center;
+            background-attachment: fixed;
+             background-color: transparent;
+             
+        }
+
+
+     </style>   
+ 
+    <link rel="stylesheet" href="asssets\css\bootstrap.css">
+    <link rel="stylesheet " href="asssets\css\assets.css">
+  </head>
+
+  <body style="background-color: transparent;">
+<div class="mx-auto bg-link mt-5 rounded-4  p-5 shadow-lg  "
+     style="background-color: rgba(0,0,0,0.2); height: 500px; width: 500px; backdrop-filter: blur(5px); border: 2px solid " id="showCardForm()">
+    
+     <div class="text-center">
+    
+      <div class="text-center mb-4">
+  <a href="cardform.html" target="main" onclick="showCardForm()"> 
+    <img src="https://www.svgrepo.com/show/452128/visa.svg" style="width: 72px;height: 72px;">
+  </a>
+  <a href="cardform.html" target="main">
+    <img src="https://www.svgrepo.com/show/362016/mastercard-old-3.svg" style="width: 72px;height: 72px;">
+  </a>
+  <a href="paypal.html" target="main">
+    <img src="https://www.svgrepo.com/show/452082/paypal.svg" style="width: 72px;height: 72px;">
+  </a>
+</div>  </div>
+
+    <div class="input-group mb-3">
+    <span class="input-group-text bg-white border border-white">
+        <img src="https://www.svgrepo.com/show/394095/credit-card.svg" style="width: 30px;height: 30px;">
+      </span>
+        
+    <input type="card-no" class="form-control" name="e-mail" placeholder="Card-Holder"  required>
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text bg-white border border-white">
+        <img src="https://www.svgrepo.com/show/249169/credit-card-password.svg" style="width: 30px;height: 30px;">
+      </span>
+      <input type="Text" class="form-control" name="Cvv" placeholder="Card number "
+        required minlength="19" maxlength="19"
+        pattern="\d{4} ?\d{4} ?\d{4} ?\d{4}">
+    </div>
+    <form action="" method="get">
+<div class="container-fluid">
+      <div class="row align-items-end">
+    <div class="col-lg-12  " style="width: 200px;">
+  <label for="expiry" class="form-label">Expiry Date : </label>
+  <input 
+  placeholder="MM/YY"
+    type="Text" 
+    class="form-control"
+    maxlength="5"
+     required pattern="^(0[1-9]|1[0-2])\/?([0-9]{2})$">
+    </div>
+    <div class="col-lg-12 pt-3 mt-5 " style="width: 200px;">
+
+    <div class="input-group ">
+      <span class="input-group-text bg-white border border-white">
+        <img src="https://www.svgrepo.com/show/249169/credit-card-password.svg" style="width: 20px;height: 20px;">
+      </span>
+      <input type="password" class="form-control" name="Cvv" placeholder="CVV"
+        required minlength="3" maxlength="3"
+       pattern="^(0[1-9]|1[0-2])\/?([0-9]{2})$">
+    </div>
+    </div>
+     </form>
+</div>
+</div>
+
+<br>
+
+    <button type="submit" class="btn btn-primary w-100 rounded-pill">Pay</button>
+    <br><br>
+</div>
+
+
+
+
+
+</body>
+</html>
