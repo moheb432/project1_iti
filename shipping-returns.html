@@ -1,23 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-     <style>
-        body{
+    <style>
+              body{
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
             background: url('https://img.freepik.com/free-vector/abstract-geometric-wireframe-background_52683-59421.jpg') ;
         }
-
-
-     </style>   
-    <title>Registeration</title>
-       <link rel="icon" type="image/png" href="Logo.svg">
+    </style>
+    <meta charset="utf-8">
+    <title>Shipping & Returns</title>
     <link rel="stylesheet" href="asssets\css\bootstrap.css">
     <link rel="stylesheet " href="asssets\css\assets.css">
+        <link rel="icon" type="image/png" href="Logo.svg">
   </head>
 
   <body>
     
+
 <div class="container-fluid d-flex justify-content-center mt-3">
   <nav class="navbar navbar-expand-md navbar-light bg-light rounded-pill shadow px-5 w-100" style="max-width: 1000px;">
     
@@ -81,100 +82,63 @@
 
   </nav>
 </div>
-<div class="form-wrapper">
-    <div class="container-fluid " style="padding: 30px;">
-        
-            <h1 class="text-center"> create new account</h1>
-        <div class="row p-5" >
 
 
-            <div class="col-lg-3"></div>
-             <div class="col-lg-6">
-              <form action="login.html" method="get" class="px-3 pt-3 form-group">
-              <div class="row">
+<div class="container-fluid bg-light text-black  ">
+ <!-- Header -->
+  <div class="container my-5 text-center">
+    <h1 class="mb-3">Shipping & Return Policy</h1>
+    <p class="lead">Everything you need to know about deliveries and returns at DELAYD.</p>
+  </div>
 
-                     <div class="col-md-6 mb-3">
+  <!-- Content Section -->
+  <div class="container mb-5">
 
-                        <label >First Name : </label>                        
-                         <input type="text" class="form-control rounded-pill" required
-                          placeholder="Enter your First Name" >
-                    </div>
+    <h3>1. Shipping Information</h3>
+    <p>We ship worldwide using trusted carriers. Orders are typically processed within 1-2 business days and delivered within 5-10 business days depending on location.</p>
+    <ul>
+      <li>Free standard shipping on all domestic orders</li>
+      <li>International shipping rates vary and are calculated at checkout</li>
+      <li>Tracking details are provided once your order is dispatched</li>
+    </ul>
 
-                     <div class="col-md-6 mb-3">
+    <h3>2. Delivery Delays</h3>
+    <p>While we aim for punctuality, shipping times may be affected by customs, weather, or holidays. DELAYD is not responsible for third-party delays, but we’ll support you every step of the way.</p>
 
-                        <label class="">Last Name : </label>                        
-                         <input type="text" class="form-control rounded-pill" required
-                          placeholder="Enter your Last Name" >
+    <h3>3. Return Policy</h3>
+    <p>If you're not satisfied with your watch, you may return it within 30 days of delivery for a refund or exchange.</p>
+    <ul>
+      <li>Item must be unused and in original packaging</li>
+      <li>Customer covers return shipping unless item is defective or incorrect</li>
+      <li>Contact <a href="support.html">support</a> to initiate a return</li>
+    </ul>
 
-                    </div>
-                    <div class="col-lg- mb-3">
+    <h3>4. Refunds</h3>
+    <p>Once your return is received and inspected, refunds are processed within 5–7 business days. We'll notify you via email as soon as it's complete.</p>
 
-                        <label for="email address"> email address</label>
-                        <input type="email" class="form-control rounded-pill" placeholder="examble@outlook.com" required >
-                    </div>
-                       <div class="col-md-6 mb-3">
+    <h3>5. Exchanges</h3>
+    <p>Need a different style or size? We offer free exchanges for domestic orders. International exchanges may incur additional fees. <br>.</p>
 
-                        <label for="password"> password</label>
-                        <input type="password" class="form-control rounded-pill " 
-                        placeholder="Enter password" required minlength="6" maxlength="20"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
-                    </div>
-                       <div class="col-md-6 mb-3">
+  </div>
 
-                        <label for="re-password"> Re-type password</label>
-                        <input type="password" class="form-control rounded-pill "
-                         placeholder="re-type again" required minlength="6" maxlength="20"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"> 
-                    </div>
-                    <div class="col-lg- mb-3">
 
-                        <label for="address">address</label>
-                        <input type="text" class="form-control rounded-pill " placeholder="enter your address">
-                    </div>
-                    
-                    
-                    
-                    
-                    <div class="col-md-6 mb-3 p-4">
-
-                          <select class="rounded-pill" name="gen" required >
-                            <option value="">choose gender ...</option>
-                            <option>Male</option>
-                            <option>Female</option>
-                          </select>
-                        </div>
-                    <div class="col-md-6 mb-3 rounded-pill">
-                          <label for="BD">Enter your Birthdate</label>
-                          <input type="date" class="form-control rounded-pill" 
-                          id="birthDate" max="2025-07-25" required>
-                        </div>    
-
-                        
-                    </div>
-                    
-                    <div class="col">
-
-                        <button type="submit" class="btn btn-success px-4 mt-1 w-100 rounded-pill">Submit</button>
-                     </div>        
-                </div>
-                </form>
-                       
-            <div class="col-lg-3"></div>
-        </div>        
-    </div>
 </div>
 
-                  <footer class="bg-secondary text-white pt-5 pb-3 text-black text-center">
+
+
+<br>
+
+    <footer class="bg-secondary text-white pt-5 pb-3 text-black text-center">
   <div class="container-fluid">
     <div class="row">
       <!-- Explore -->
       <div class="col-md-3">
         <h5 class="text-uppercase mb-3">Explore</h5>
         <ul class="list-unstyled">
-          <li><a href="#" class="text-white-50">Home</a></li>
-          <li><a href="#" class="text-white-50">Features</a></li>
-          <li><a href="#" class="text-white-50">Classical</a></li>
-          <li><a href="#" class="text-white-50">Smart-Watches</a></li>
+          <li><a href="home.html" class="text-white-50">Home</a></li>
+          <li><a href="features.html" class="text-white-50">Features</a></li>
+          <li><a href="classical.html" class="text-white-50">Classical</a></li>
+          <li><a href="smartwatches.html" class="text-white-50">Smart-Watches</a></li>
         
         </ul>
       </div>
@@ -184,7 +148,7 @@
         <h5 class="text-uppercase mb-3">Company</h5>
         <ul class="list-unstyled">
           <li><a href="about-us.html" class="text-white-50">About Delayd</a></li>
-          <li><a href="#" class="text-white-50">Our Story</a></li>
+          <li><a href="about-us.html" class="text-white-50">Our Story</a></li>
           <li><a href="#" class="text-white-50">Blog</a></li>
           <li><a href="#" class="text-white-50">Careers</a></li>
         </ul>
@@ -231,8 +195,11 @@
 
 
 
+
+
+
       <script src="asssets\js\bootstrap.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </div>
-</div>
-    
+
+  </body>
+</html>

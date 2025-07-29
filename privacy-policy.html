@@ -1,23 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-     <style>
-        body{
+    <style>
+              body{
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
             background: url('https://img.freepik.com/free-vector/abstract-geometric-wireframe-background_52683-59421.jpg') ;
         }
-
-
-     </style>   
-    <title>Registeration</title>
-       <link rel="icon" type="image/png" href="Logo.svg">
+    </style>
+    <meta charset="utf-8">
+    <title>privacy & policy</title>
     <link rel="stylesheet" href="asssets\css\bootstrap.css">
     <link rel="stylesheet " href="asssets\css\assets.css">
+        <link rel="icon" type="image/png" href="Logo.svg">
   </head>
 
   <body>
     
+
 <div class="container-fluid d-flex justify-content-center mt-3">
   <nav class="navbar navbar-expand-md navbar-light bg-light rounded-pill shadow px-5 w-100" style="max-width: 1000px;">
     
@@ -81,100 +82,54 @@
 
   </nav>
 </div>
-<div class="form-wrapper">
-    <div class="container-fluid " style="padding: 30px;">
-        
-            <h1 class="text-center"> create new account</h1>
-        <div class="row p-5" >
 
+ <!-- Header -->
+  <div class="container bg-light text-black rounded-pill text-center">
+  <div class="container my-5 text-center">
+    <h1 class="mb-3">Privacy Policy</h1>
+    <p class="lead">Your trust means everything to us. Here's how we protect it.</p>
+  </div>
 
-            <div class="col-lg-3"></div>
-             <div class="col-lg-6">
-              <form action="login.html" method="get" class="px-3 pt-3 form-group">
-              <div class="row">
+  <!-- Privacy Content -->
+  <div class="container mb-5">
+    <h3>1. Information We Collect</h3>
+    <p>We collect your name, email address, and other relevant details when you sign up, place an order, or contact support.</p>
 
-                     <div class="col-md-6 mb-3">
+    <h3>2. How We Use Your Information</h3>
+    <p>Your data helps us process orders, improve customer service, and provide personalized experiences.</p>
 
-                        <label >First Name : </label>                        
-                         <input type="text" class="form-control rounded-pill" required
-                          placeholder="Enter your First Name" >
-                    </div>
+    <h3>3. Data Security</h3>
+    <p>We use secure servers, encryption, and strict access control to ensure your information is protected.</p>
 
-                     <div class="col-md-6 mb-3">
+    <h3>4. Third-Party Services</h3>
+    <p>We may partner with trusted services (e.g., payment gateways) that have their own privacy policies.</p>
 
-                        <label class="">Last Name : </label>                        
-                         <input type="text" class="form-control rounded-pill" required
-                          placeholder="Enter your Last Name" >
+    <h3>5. Cookies</h3>
+    <p>Cookies help us enhance your browsing experience and track website analytics. You can disable them via browser settings.</p>
 
-                    </div>
-                    <div class="col-lg- mb-3">
+    <h3>6. Your Rights</h3>
+    <p>You can request to view, update, or delete your personal data at any time by contacting us.</p>
 
-                        <label for="email address"> email address</label>
-                        <input type="email" class="form-control rounded-pill" placeholder="examble@outlook.com" required >
-                    </div>
-                       <div class="col-md-6 mb-3">
-
-                        <label for="password"> password</label>
-                        <input type="password" class="form-control rounded-pill " 
-                        placeholder="Enter password" required minlength="6" maxlength="20"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
-                    </div>
-                       <div class="col-md-6 mb-3">
-
-                        <label for="re-password"> Re-type password</label>
-                        <input type="password" class="form-control rounded-pill "
-                         placeholder="re-type again" required minlength="6" maxlength="20"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"> 
-                    </div>
-                    <div class="col-lg- mb-3">
-
-                        <label for="address">address</label>
-                        <input type="text" class="form-control rounded-pill " placeholder="enter your address">
-                    </div>
-                    
-                    
-                    
-                    
-                    <div class="col-md-6 mb-3 p-4">
-
-                          <select class="rounded-pill" name="gen" required >
-                            <option value="">choose gender ...</option>
-                            <option>Male</option>
-                            <option>Female</option>
-                          </select>
-                        </div>
-                    <div class="col-md-6 mb-3 rounded-pill">
-                          <label for="BD">Enter your Birthdate</label>
-                          <input type="date" class="form-control rounded-pill" 
-                          id="birthDate" max="2025-07-25" required>
-                        </div>    
-
-                        
-                    </div>
-                    
-                    <div class="col">
-
-                        <button type="submit" class="btn btn-success px-4 mt-1 w-100 rounded-pill">Submit</button>
-                     </div>        
-                </div>
-                </form>
-                       
-            <div class="col-lg-3"></div>
-        </div>        
-    </div>
+    <h3>7. Updates to This Policy</h3>
+    <p>We reserve the right to revise this policy. Changes will be posted on this page with a revised date.</p>
+  </div>
 </div>
 
-                  <footer class="bg-secondary text-white pt-5 pb-3 text-black text-center">
+
+
+
+<br>
+  <footer class="bg-secondary text-white pt-5 pb-3 text-black text-center">
   <div class="container-fluid">
     <div class="row">
       <!-- Explore -->
       <div class="col-md-3">
         <h5 class="text-uppercase mb-3">Explore</h5>
         <ul class="list-unstyled">
-          <li><a href="#" class="text-white-50">Home</a></li>
-          <li><a href="#" class="text-white-50">Features</a></li>
-          <li><a href="#" class="text-white-50">Classical</a></li>
-          <li><a href="#" class="text-white-50">Smart-Watches</a></li>
+          <li><a href="home.html" class="text-white-50">Home</a></li>
+          <li><a href="features.html" class="text-white-50">Features</a></li>
+          <li><a href="classical.html" class="text-white-50">Classical</a></li>
+          <li><a href="smartwatches.html" class="text-white-50">Smart-Watches</a></li>
         
         </ul>
       </div>
@@ -184,7 +139,7 @@
         <h5 class="text-uppercase mb-3">Company</h5>
         <ul class="list-unstyled">
           <li><a href="about-us.html" class="text-white-50">About Delayd</a></li>
-          <li><a href="#" class="text-white-50">Our Story</a></li>
+          <li><a href="about-us.html" class="text-white-50">Our Story</a></li>
           <li><a href="#" class="text-white-50">Blog</a></li>
           <li><a href="#" class="text-white-50">Careers</a></li>
         </ul>
@@ -223,16 +178,7 @@
   </div>
 </footer>
 
-
-
-
-
-
-
-
-
-      <script src="asssets\js\bootstrap.js"></script>
+    <script src="asssets\js\bootstrap.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </div>
-</div>
-    
+  </body>
+</html>
