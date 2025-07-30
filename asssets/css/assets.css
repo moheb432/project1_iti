@@ -1,13 +1,8 @@
-/* .row{
-border: 3px solid;
-height: 40px;
-padding: 10px;
-}
-.col{
-padding: 10px;
-border: 3px solid;
-height: 40px;
-
-
-
-} */
+        body{
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            background-color:whitesmoke;
+            
+            background: url('https://img.freepik.com/free-vector/abstract-geometric-wireframe-background_52683-59421.jpg') ;            ; background-repeat: no-repeat; background-size: cover; background-position: center;
+        }
