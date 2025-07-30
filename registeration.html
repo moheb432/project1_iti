@@ -91,50 +91,51 @@
              <div class="col-lg-6">
               <form action="login.html" method="get" class="px-3 pt-3 form-group">
               <div class="row">
+                    
+                     <div class="col-md-6 mb-3" style="width: 280px;">
 
-                     <div class="col-md-6 mb-3">
-
-                        <label >First Name : </label>                        
+                        <label for="first">First Name : </label>                        
                          <input type="text" class="form-control rounded-pill" required
-                          placeholder="Enter your First Name" >
+                          placeholder="Enter your First Name" id="first">
                     </div>
+                  <div class="row" style="width: 500px;">
+                     <div class="col-md-6 mb-3" style="width:280px;">
 
-                     <div class="col-md-6 mb-3">
-
-                        <label class="">Last Name : </label>                        
+                        <label for="last">Last Name : </label>                        
                          <input type="text" class="form-control rounded-pill" required
-                          placeholder="Enter your Last Name" >
+                          placeholder="Enter your Last Name" id="last" >
 
+                    </div>
                     </div>
                     <div class="col-lg- mb-3">
 
                         <label for="email address"> email address</label>
-                        <input type="email" class="form-control rounded-pill" placeholder="examble@outlook.com" required >
+                        <input type="email" class="form-control rounded-pill" placeholder="examble@outlook.com" required id="email address">
                     </div>
-                       <div class="col-md-6 mb-3">
+                       <div class="col-md-6 mb-3" style="width: 280px;">
 
                         <label for="password"> password</label>
                         <input type="password" class="form-control rounded-pill " 
                         placeholder="Enter password" required minlength="6" maxlength="20"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" id="password">
                     </div>
-                       <div class="col-md-6 mb-3">
+                       <div class="col-md-6 mb-3" style="width: 280px;">
 
-                        <label for="re-password"> Re-type password</label>
+                        <label for="re-password" > Re-type password</label>
                         <input type="password" class="form-control rounded-pill "
                          placeholder="re-type again" required minlength="6" maxlength="20"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"> 
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" id="re-password"> 
                     </div>
                     <div class="col-lg- mb-3">
 
                         <label for="address">address</label>
-                        <input type="text" class="form-control rounded-pill " placeholder="enter your address">
+                        <input type="text" class="form-control rounded-pill " placeholder="enter your address" id="address">
                     </div>
                     
                     
                     
                     
-                    <div class="col-md-6 mb-3 p-4">
+                    <div class="col-md-6 mb-3 p-2">
 
                           <select class="rounded-pill" name="gen" required >
                             <option value="">choose gender ...</option>
@@ -142,12 +143,13 @@
                             <option>Female</option>
                           </select>
                         </div>
-                    <div class="col-md-6 mb-3 rounded-pill">
+                        <div class="row">
+                    <div class="col-md-6 mb-3  rounded-pill">
                           <label for="BD">Enter your Birthdate</label>
-                          <input type="date" class="form-control rounded-pill" 
+                          <input type="date" class="form-control rounded-pill " style="width: 140px;" 
                           id="birthDate" max="2025-07-25" required>
                         </div>    
-
+                     </div>
                         
                     </div>
                     
